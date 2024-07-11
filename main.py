@@ -20,17 +20,17 @@ import commands as komut
 #Komutlar bu modülde olacak
 
 import config as cf
+#config dosyasını dahil ettim bu dosya sayesinde konsolu istediğiniz gibi ayarlayabilirsiniz.
 
-import history
+from sys import exit
+#bu fonksiyon programı kapatmak için
 
 kürdistan = "" # Sadece bir şaka :)
 
 cf.start()# Başlangıç kodları
+
 #Aşağıda bir while dongüsü var, bu döngü sayesinde program kapanmıyor ve her zaman bir komut bekler
 #kapat komudunu kullanana kadar.
-
-history.setup_input_history()
-
 while_key = True
 #Ben bu değişkene while anahtarı diyorum
 #Bunun görevi ise while döngüsünü True yani aktif halede çalışmasını ve zamanı gelince False yani kapanmasını sağlamak
@@ -53,14 +53,15 @@ while while_key:
     #1: Hilal tarzı
     #2: GNU linux tarzı
     #3: Windows cmd tarzı
-    tema = tema1 #<---  Aktif olan tema
+    tema = tema3 #<---  Aktif olan tema
 
-    main = history.get_input(tema)
+    main = input(tema)
     #bu input komut girmemizi sağlar
 
     #Aşağıda bir if bloğu daha doğrusu bir if ağı var
     #bu if ağı komutları gireceğimiz girdiye göre çalıştırır.
-    if main == "kapat":#While anahtarını hatırladınız mı? işte bu komut while döngüsünü bozar ve bu sayede program kapanır.
+    if main == "kapat":#While anahtarını hatırladınız mı? işte bu komut while döngüsünü bozar ve bu sayede program kapanır. garanti olsun diye exit fonksiyonunu kullanacağım
+        exit()
         while_key = False
 
     elif main == "tmz":# linıx komudunu kullanarak terminali temizler
@@ -68,10 +69,6 @@ while while_key:
 
     elif main == kürdistan:#Hiç bir komut yazmadan sadece enter tuşuna basınca hiç birşey olmazya işte bu ona yarıyor.
         pass
-
-    #Bundan sonrası sizde
-    #Kodumu inceleyin ve keşifedin
-    #Yaptığım herşeyi anlatmak zor olur.
 
     elif main[0:4] == "gir ":
         komut.gir(main[4::])
@@ -112,7 +109,7 @@ while while_key:
             print(cf.error2)
 
     elif main[0:5] == "klos ":
-        komut.klos(main[5::])   # Dosya işlemleri bölümü
+        komut.klos(main[5::])# Dosya işlemleri bölümü
     elif main[0:4] == "sil ":
         komut.sil(main[4::])
     elif main[0:4] == "yaz ":
@@ -129,7 +126,7 @@ while while_key:
     elif main == "tema3":
         os.system("tema-cmd")
 
-    else:
+    else:#linux komutlarını kullan
         os.system(main)
 
 

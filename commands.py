@@ -1,5 +1,7 @@
 #Yazan Yiğit
 
+#Burada komutlar için gerekli bazı fonksiyonler vardır
+
 import os
 import config as cf
 
@@ -20,11 +22,11 @@ def geri():
 
 def hilal():
     info = """
-    Sürüm: 1.0
+    Sürüm: 1.1
     Hazırlayan : Yiğit
     Lisans : GPL
     paket yöneticileri: apt - dnf
-    github:
+    github: 7yigit7/hilal-konsole
     """
     print(info)
 
