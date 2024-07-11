@@ -22,7 +22,7 @@ def geri():
 
 def hilal():
     info = """
-    Sürüm: 1.1
+    Sürüm: 1.2
     Hazırlayan : Yiğit
     Lisans : GPL
     paket yöneticileri: apt - dnf

@@ -25,9 +25,13 @@ import config as cf
 from sys import exit
 #bu fonksiyon programı kapatmak için
 
+import history
+
 kürdistan = "" # Sadece bir şaka :)
 
 cf.start()# Başlangıç kodları
+
+history.setup_input_history()
 
 #Aşağıda bir while dongüsü var, bu döngü sayesinde program kapanmıyor ve her zaman bir komut bekler
 #kapat komudunu kullanana kadar.
@@ -55,7 +59,7 @@ while while_key:
     #3: Windows cmd tarzı
     tema = tema1 #<---  Aktif olan tema
 
-    main = input(tema)
+    main = history.get_input(tema)
     #bu input komut girmemizi sağlar
 
     #Aşağıda bir if bloğu daha doğrusu bir if ağı var

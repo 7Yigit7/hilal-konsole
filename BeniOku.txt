@@ -1,0 +1,53 @@
+    Hilal konsole 1.2
+
+Bağımlılıklar:
+    python3
+
+    modülleri:
+    os  --> işletim sistemi işlemleri
+    sys  --> kapatma işlemi
+    termcolor  --> renkli terminal için
+    colored   --> renkli terminal için
+    readline  --> geçmiş sistemi için
+
+    kurulum için pip komutu. tek komut ile tüm paketleri kur:
+
+komutlar:
+    ip göster : ip adresini gösterir
+    klos (dosya adı) : klasör oluşturur
+    sil (dosya adı) : dosya siler
+    yaz (dosya adı) : nona açar
+    dosya (dosya adı) : dosya oluşturur
+    geri : önceki klasöre girer cd .. gibi
+    gir (klsaör adı) : klasöre girer cd komutu ile aynı
+    ls : bunu bilemeyen yoktur
+    yetki (sudo komkutu) : sudo komutlarını yazabilirsiniz
+    tmz : terminali temizler, clear gibi
+    kapat : Programı kapatır not: temaları kullandıysanız bu kapat komutu buga girer yakında düzelteceğim. kapatmak için ctrl + Z tuşuna basmanız yeterli.
+    yetki kapat : bilgisayatı kapatır
+
+    Paket yöneticileri:
+    Fedora:
+    dnf kur [paket adı]
+    dnf sistem -güncelle veya dnf sistem -g : upgrade
+    dnf paket -güncelle veya dnf paket -g : update
+
+    Debian & Ubuntu:
+    apt kur [paket adı]
+    apt sistem -güncelle veya dnf sistem -g : upgrade
+    apt paket -güncelle veya dnf paket -g : update
+
+    Temalar:
+    Tema1 : hilal tarzı (varsayılan)
+    tema2 : GNU linux tarzı
+    tema3 : Windows CMD tarzı
+
+    daha fazla tema yakında ...
+    güncellemelerden haberdar olmak için github deposunu kontrol edebilirsinizi
+
+    Şimdilik sadece iki dağıtım için paket yöneticisi var(dnf,apt), daha fazlası yakında...
+
+    ama bunlar dışında normak linux komutlarını da çalıştırır
+
+    güncellemelerden haberdar olmak için github deposunu kontrol edebilirsinizi
+
