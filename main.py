@@ -53,7 +53,7 @@ while while_key:
     #1: Hilal tarzı
     #2: GNU linux tarzı
     #3: Windows cmd tarzı
-    tema = tema3 #<---  Aktif olan tema
+    tema = tema1 #<---  Aktif olan tema
 
     main = input(tema)
     #bu input komut girmemizi sağlar
