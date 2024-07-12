@@ -4,6 +4,7 @@
 
 import os
 import config as cf
+from termcolor import colored
 
 def gir(konum):
     try:
@@ -21,13 +22,14 @@ def geri():
     os.chdir('..')
 
 def hilal():
-    info = """
-    Sürüm: 1.2
+    info = colored("""
+    Sürüm: 1.3
     Hazırlayan : Yiğit
     Lisans : GPL
     paket yöneticileri: apt - dnf
-    github: 7yigit7/hilal-konsole
-    """
+    github: https://github.com/7Yigit7/hilal-konsole
+    web sitesi: yigitweb.online
+    ""","cyan")
     print(info)
 
 def yetki(komut):
@@ -50,4 +52,17 @@ def sil(dosya_adi):
 
 def dosya(dosya_adi):
     os.system(f"touch {dosya_adi}")
+
+def durum():
+    print()
+
+def kp(x):
+    os.system(f"cp {x}")
+
+def py(start):
+    os.system(f"python3 {start}")
+def jar(start):
+    os.system(f"java -jar {start}")
+def c(start,derlenen):
+    os.system(f"g++ {start} -o {derlenen} && ./{derlenen}")
 

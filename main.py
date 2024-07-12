@@ -121,14 +121,18 @@ while while_key:
     elif main[0:6] == "dosya ":
         komut.dosya(main[6::])
 
-    elif main == "tema1":
-        os.system("hilal")#Tema geçiş sistemi
+    elif main[0:3] == "kp ":
+        komut.kp(main[3::])
 
-    elif main == "tema2":#Kurulum sırasında bu paketlerde kurulur
-        os.system("tema-gnu")
+    elif main[0:3] == "py ":
+        komut.py(main[3::])
 
-    elif main == "tema3":
-        os.system("tema-cmd")
+    elif main[0:4] == "jar ":
+        komut.jar(main[4::])
+
+    elif main[0:2] == "c ":
+        komut.c(start=main[2::],derlenen=main[2:-1])
+
 
     else:#linux komutlarını kullan
         os.system(main)
