@@ -65,4 +65,6 @@ def jar(start):
     os.system(f"java -jar {start}")
 def c(start,derlenen):
     os.system(f"g++ {start} -o {derlenen} && ./{derlenen}")
+def yanki(d):
+    print(d)
 
