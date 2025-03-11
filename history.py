@@ -1,5 +1,3 @@
-# Yazan Chat gpt
-
 import readline
 
 def setup_input_history():
