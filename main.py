@@ -131,6 +131,9 @@ while while_key:
     elif main[0:2] == "c ":
         komut.c(start=main[2::],derlenen=main[2:-1])
 
+    elif main[0:6] == "yankı ":
+        komut.yanki(main[6::])
+
     else:#linux komutlarını kullan
         os.system(main)
 
