@@ -1,5 +1,3 @@
-#Yazan Yiğit
-
 #Merhaba bu py sayfasında sizlere neler yaptığımı anlatacağım
 #hemde ayrıntılı bir şekilde
 
@@ -132,7 +130,6 @@ while while_key:
 
     elif main[0:2] == "c ":
         komut.c(start=main[2::],derlenen=main[2:-1])
-
 
     else:#linux komutlarını kullan
         os.system(main)
