@@ -4,3 +4,7 @@ bu terminalde 3 farklı tema var(daha fazlasını eklemeyi düşünüyorum) ve b
 ister konsolu kullanabilir, istersenizde kendi konsol programınızı veya kendi temanızı(belki ikisi birden) oluşturabilirsniz.
 ve bu konsolun windows versiyonu yakında(çıkarmayı düşünüyorum)
 
+
+
+
+.
